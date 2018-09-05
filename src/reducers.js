@@ -2,7 +2,7 @@ import actionTypes from './action-types';
 
 const initialState = {
   dataLoading: false,
-  data: []
+  data: [],
 };
 
 export default (state = initialState, action) => {

@@ -47,30 +47,30 @@ ConnectedPage.propTypes = {
   dataLoading: PropTypes.bool,
   data: PropTypes.array,
   loadRemoteData: PropTypes.func,
-  loadedRemoteData: PropTypes.func
+  loadedRemoteData: PropTypes.func,
 };
 
 /**
  * Example default prop definition
  */
 ConnectedPage.defaultProps = {
-  defaultProp: false
+  defaultProp: false,
 };
 
 /**
  * To assign state elements of store to our current page's props
  */
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   dataLoading: state.rootReducer.dataLoading,
-  data: state.rootReducer.data
+  data: state.rootReducer.data,
 });
 
 /**
  * To assign actions to our current page's props
  */
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   loadRemoteData: () => dispatch(loadRemoteData()),
-  loadedRemoteData: data => dispatch(loadedRemoteData(data))
+  loadedRemoteData: (data) => dispatch(loadedRemoteData(data)),
 });
 
 /**

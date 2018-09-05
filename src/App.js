@@ -7,8 +7,15 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Switch>
-          {routes.map(route => {
-            return <Route key={route.path} exact path={route.path} component={route.component} />;
+          {routes.map((route) => {
+            return (
+              <Route
+                key={route.path}
+                exact
+                path={route.path}
+                component={route.component}
+              />
+            );
           })}
         </Switch>
       </BrowserRouter>

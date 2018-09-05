@@ -3,10 +3,10 @@ import { HomePage, ConnectedPage } from './Pages';
 export const routes = [
   {
     path: '/',
-    component: HomePage
+    component: HomePage,
   },
   {
     path: '/connected',
-    component: ConnectedPage
-  }
+    component: ConnectedPage,
+  },
 ];
