@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { loadRemoteData, loadedRemoteData } from '../../actions';
-import '../Pages.css';
+import '../Pages.scss';
 
 class ConnectedPage extends Component {
   constructor(props) {
